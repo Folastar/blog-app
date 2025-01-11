@@ -1,0 +1,48 @@
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: absolute;
+    bottom: -65px;
+    background-color: rgba(215, 40, 20, 1);
+    z-index: 20;
+    /* outline-color: red; */
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}   
+
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.hide {
+    display: none;
+}
+
+label{
+    position: relative;
+}
+input{
+    display: initial;
+}
+
+.form-controls{
+    @apply my-4
+}
+
+button:disabled{
+    @apply bg-blue-100 pointer-events-none
+}

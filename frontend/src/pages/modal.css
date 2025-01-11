@@ -1,0 +1,7 @@
+.form-control{
+    @apply my-3 
+}
+
+label{
+    @apply block
+}

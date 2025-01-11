@@ -1,0 +1,28 @@
+
+
+
+.form-control{
+    @apply relative my-8 text-blue-700
+}
+
+.inputBox{
+    @apply w-full outline-none border-b border-blue-600 px-1   focus:border-b-2
+}
+
+
+.labelBox{
+    @apply absolute duration-300 
+}
+
+.form-control .inputBox:focus + .labelBox,
+.inputBox:not(:placeholder-shown) + .labelBox{
+    /* transform: translateY(-17px);
+    color: rgba(0, 0, 255, 0.349); */
+    @apply -translate-y-5 text-blue-400
+
+}
+
+
+/* .valid{
+    @apply 
+} */
