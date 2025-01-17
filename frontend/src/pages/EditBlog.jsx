@@ -23,7 +23,11 @@ const EditBlog = () => {
     useEffect(()=>{
       const fetchBlog = async()=>{
         try{
-          const response =await axios.get(`http://localhost:4005/api/v1/blogs/${_id}`)  
+          const response =await axios.get(`https://blog-app-uylh.onrender.com/api/v1/blogs/${_id}`,{
+            headers:{
+              Authorization:`Bearer ${user.token}`
+            },
+          })  
           setFormData(response.data.blog)
         }
         
