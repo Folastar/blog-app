@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { PiSpinnerBallBold } from "react-icons/pi";
 import { useParams, useNavigate } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 const EditBlog = () => {
   const {_id} =useParams()
   
@@ -18,7 +19,9 @@ const EditBlog = () => {
       author: "",
     });
     const navigate =useNavigate()
-
+    const {
+      state: {user},
+    }= useContext(AppContext)
     // populate with initial info on load
     useEffect(()=>{
       const fetchBlog = async()=>{
