@@ -78,7 +78,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4005/api/v1/auth/signup",
+        "https://blog-app-uylh.onrender.com/api/v1/auth/signup",
         formData
       );
 

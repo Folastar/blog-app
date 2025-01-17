@@ -4,7 +4,7 @@
 // import Modal from "./Modal";
 // import { useState } from "react";
  const Blogs = ()=>{
-     const blogs =useFetch("http://localhost:4005/api/v1/blogs")
+     const blogs =useFetch("https://blog-app-uylh.onrender.com/api/v1/blogs")
      console.log(blogs)
      const {loading, error, data} =blogs
     console.log(data)

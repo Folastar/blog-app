@@ -59,7 +59,7 @@ const {dispatch}= useContext(AppContext)
 
     try{
         setLoading(true)
-        const response =await axios.post("http://localhost:4005/api/v1/auth/login", {username:user, password:pwd})
+        const response =await axios.post("https://blog-app-uylh.onrender.com/api/v1/auth/login", {username:user, password:pwd})
         
         if(response.status===200){
           localStorage.setItem("pantone", JSON.stringify(response.data)) //to store data to local system storage

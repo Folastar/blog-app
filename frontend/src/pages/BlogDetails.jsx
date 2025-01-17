@@ -13,7 +13,7 @@ const BlogDetails = () => {
         try{
             const  sure = confirm("do you want to delete blog?")
             if(sure){
-                const res= await axios.delete(`http://localhost:4005/api/v1/blogs/${_id}`)
+                const res= await axios.delete(`https://blog-app-uylh.onrender.com/api/v1/blogs/${_id}`)
                 
                 if(res.status === 201){
                     toast.success("Blog deleted successfully ")

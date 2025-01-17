@@ -48,7 +48,7 @@ const EditBlog = () => {
         setLoading(true);
         setError(null);
         const response = await axios.patch(
-        `http://localhost:4005/api/v1/blogs/${_id}`,
+        `https://blog-app-uylh.onrender.com/api/v1/blogs/${_id}`,
           formData
         );
   
