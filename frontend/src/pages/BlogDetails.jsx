@@ -30,7 +30,7 @@ const BlogDetails = () => {
         // console.log(response.data.blog)
         // setFormData("")
     }
-    const blog =useFetch(`http://localhost:4005/api/v1/blogs/${_id}`)
+    const blog =useFetch(`https://blog-app-uylh.onrender.com/api/v1/blogs/${_id}`)
     console.log(blog)
     const {loading,data,error} =blog;
    
