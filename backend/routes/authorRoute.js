@@ -12,4 +12,4 @@ authorRouter.post("/login",login )
 authorRouter.get("/profile", authenticate, getProfile)
 
 
-export default authorRouter;
+export default authorRouter; 

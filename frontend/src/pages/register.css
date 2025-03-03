@@ -11,7 +11,7 @@
 
 
 .labelBox{
-    @apply absolute duration-300 
+    @apply absolute left-0 duration-300 
 }
 
 .form-control .inputBox:focus + .labelBox,
