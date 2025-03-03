@@ -214,7 +214,10 @@ const {dispatch}= useContext(AppContext)
           </button>
         </form>
         <div className="flex justify-around flex-col py-4 sm:flex-row">
-          <Link to={"/register "}>Don't have an account?</Link>
+          <p>
+          Don't have an account?  <Link to={"/register "}>Register</Link>
+          </p>
+        
           <Link>Forgot password?</Link>
         </div>
       </div>
