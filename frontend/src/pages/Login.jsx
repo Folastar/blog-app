@@ -85,7 +85,7 @@ const {dispatch}= useContext(AppContext)
   };
   return (
     <div className=" flex justify-center text-black items-center w-full   min-h-screen">
-      <div className=" sm:w-[40%] w-[70%] h-1/2 shadow-2xl rounded-lg">
+      <div className=" sm:w-[40%] w-[90%] h-1/2 shadow-2xl rounded-lg">
         <h1 className="text-center py-1 text-3xl text-cyan-700">Login now</h1>
         <form onSubmit={handleSubmit} className="px-10 py-5 relative">
           <div className="form-control relative">
@@ -109,7 +109,7 @@ const {dispatch}= useContext(AppContext)
                 setUser(e.target.value);
               }}
 
-              className={`w-full rounded-3xl px-4 py-2 outline-none  border bg-slate-100 ${
+              className={`w-full rounded-3xl px-4 sm:py-2 py-1 outline-none  border bg-slate-100 ${
                 validName ? "border-green-500" : "border-red-500"
               } ${!user ? "border-yellow-400" :"none"} `}
               type="text"
@@ -153,7 +153,7 @@ const {dispatch}= useContext(AppContext)
                 onChange={(e) => {
                   setPwd(e.target.value);
                 }}
-                className={`w-full rounded-3xl px-4 py-2 bg-slate-100 border outline-none   ${
+                className={`w-full rounded-3xl px-4 sm:py-2 py-1 bg-slate-100 border outline-none   ${
                   validPwd? "border-green-500" : "border-red-500"
                 }  ${!pwd ? "border-yellow-500" : "border-green-500"}`}
                 type={showPassword ? "text" : "password"}
@@ -213,12 +213,12 @@ const {dispatch}= useContext(AppContext)
             
           </button>
         </form>
-        <div className="flex justify-around flex-col py-4 sm:flex-row">
+        <div className="flex px-4 justify-around flex-col py-4 sm:flex-row">
           <p>
-          Don't have an account?  <Link to={"/register "}>Register</Link>
+          Don't have an account?  <Link className="text-pink-800" to={"/register "}>Register</Link>
           </p>
         
-          <Link>Forgot password?</Link>
+          {/* <Link>Forgot password?</Link> */}
         </div>
       </div>
     </div>
